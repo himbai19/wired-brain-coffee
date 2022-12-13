@@ -1,4 +1,4 @@
-# Comment that will be sent if an issue is judged to be closed
+# Comment that will be sent if an issue is judged to be closed.
 comment: "This issue is closed because it does not meet our issue template. Please read it."
 issueConfigs:
 # There can be several configs for different kind of issues.
@@ -13,8 +13,10 @@ issueConfigs:
   - "Use Case"
   - "Expected Behavior"
   - "Additional Context"
-# The issue is judged to be legal if it includes all keywords from any of these two configs.
-# Or it will be closed by the app.
+# Optional configuration:
+#
+# whether the keywords are case-insensitive
+# default value is false, which means keywords are case-sensitive
 caseInsensitive: false
 # the label that will be added when the bot close an issue
 # The bot will only add a label if this property is set.
